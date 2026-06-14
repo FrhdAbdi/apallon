@@ -1,0 +1,6 @@
+@Apallon.Api_HostAddress = http://localhost:5282
+
+GET {{Apallon.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

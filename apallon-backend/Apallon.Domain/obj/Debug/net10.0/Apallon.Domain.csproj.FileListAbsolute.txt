@@ -1,0 +1,11 @@
+E:\Personal\Apallon\Apallon.Domain\bin\Debug\net10.0\Apallon.Domain.deps.json
+E:\Personal\Apallon\Apallon.Domain\bin\Debug\net10.0\Apallon.Domain.dll
+E:\Personal\Apallon\Apallon.Domain\bin\Debug\net10.0\Apallon.Domain.pdb
+E:\Personal\Apallon\Apallon.Domain\obj\Debug\net10.0\Apallon.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Personal\Apallon\Apallon.Domain\obj\Debug\net10.0\Apallon.Domain.AssemblyInfoInputs.cache
+E:\Personal\Apallon\Apallon.Domain\obj\Debug\net10.0\Apallon.Domain.AssemblyInfo.cs
+E:\Personal\Apallon\Apallon.Domain\obj\Debug\net10.0\Apallon.Domain.csproj.CoreCompileInputs.cache
+E:\Personal\Apallon\Apallon.Domain\obj\Debug\net10.0\Apallon.Domain.dll
+E:\Personal\Apallon\Apallon.Domain\obj\Debug\net10.0\refint\Apallon.Domain.dll
+E:\Personal\Apallon\Apallon.Domain\obj\Debug\net10.0\Apallon.Domain.pdb
+E:\Personal\Apallon\Apallon.Domain\obj\Debug\net10.0\ref\Apallon.Domain.dll

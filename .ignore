@@ -1,0 +1,49 @@
+# ================================
+# .NET (inside apallon-backend)
+# ================================
+apallon-backend/**/bin/
+apallon-backend/**/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.vs/
+.vscode/
+
+# NuGet
+**/packages/
+*.nupkg
+
+# App settings (keep the base template, ignore local overrides)
+apallon-backend/**/appsettings.Development.json
+apallon-backend/**/appsettings.*.json
+!apallon-backend/**/appsettings.json
+!apallon-backend/**/appsettings.*.example.json
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# ================================
+# Node / React / Vite
+# ================================
+apallon-frontend/node_modules/
+apallon-frontend/dist/
+apallon-frontend/.env
+apallon-frontend/.env.local
+apallon-frontend/.env.*.local
+
+# Build output (Vite)
+apallon-frontend/dist-ssr/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db

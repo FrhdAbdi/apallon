@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Apallon.Api/Apallon.Api.csproj" />
+  <Project Path="Apallon.Application/Apallon.Application.csproj" />
+  <Project Path="Apallon.Domain/Apallon.Domain.csproj" />
+  <Project Path="Apallon.Infrastructure/Apallon.Infrastructure.csproj" />
+</Solution>
