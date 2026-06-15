@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from '../hooks/useTheme';
 
 const Header = () => {
   const { dark, toggleTheme } = useTheme();
@@ -12,7 +12,6 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo + Brand */}
         <Link to="/" className="flex items-center gap-3">
           <img
             src={dark ? '/apallon-logo-dark.png' : '/apallon-logo-light.png'}
@@ -24,7 +23,6 @@ const Header = () => {
           </span>
         </Link>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8 items-center">
           <Link to="/blog" className={linkClass}>Blog</Link>
           <Link to="/projects" className={linkClass}>Projects</Link>
@@ -33,9 +31,7 @@ const Header = () => {
           <Link to="/contact" className={linkClass}>Contact</Link>
         </div>
 
-        {/* Right side: toggle + hamburger */}
         <div className="flex items-center gap-2">
-          {/* Theme toggle (always visible) */}
           <button
             onClick={toggleTheme}
             className="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-900/20 focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
@@ -54,7 +50,6 @@ const Header = () => {
             )}
           </button>
 
-          {/* Hamburger button (mobile only) */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="md:hidden p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-purple-50 dark:hover:bg-purple-900/20 focus:outline-none"
@@ -71,7 +66,6 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* Mobile menu dropdown */}
       {mobileOpen && (
         <div className="md:hidden border-t border-gray-200 dark:border-gray-800 bg-white/95 dark:bg-black/95 backdrop-blur">
           <div className="max-w-6xl mx-auto px-4 py-3 space-y-2">

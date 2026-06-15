@@ -48,7 +48,6 @@ const featuredPosts = [
 const HomePage = () => {
   return (
     <section className="flex flex-col">
-      {/* Hero */}
       <div className="flex flex-col justify-center items-center text-center px-4 py-16">
         <div className="w-24 h-24 rounded-full bg-purple-600/20 dark:bg-purple-400/10 flex items-center justify-center mb-8">
           <span className="text-4xl font-bold text-purple-600 dark:text-purple-400">A</span>
@@ -77,7 +76,6 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Blog Preview */}
       <div className="max-w-6xl mx-auto px-4 w-full pb-12">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
