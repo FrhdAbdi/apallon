@@ -45,47 +45,91 @@ const featuredPosts = [
   },
 ];
 
+const formatDate = (date) =>
+  new Date(date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+
 const HomePage = () => {
   return (
     <section className="flex flex-col">
-      <div className="flex flex-col justify-center items-center text-center px-4 py-16">
-        <div className="w-24 h-24 rounded-full bg-purple-600/20 dark:bg-purple-400/10 flex items-center justify-center mb-8">
-          <span className="text-4xl font-bold text-purple-600 dark:text-purple-400">A</span>
-        </div>
+      <div className="relative overflow-hidden">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10 opacity-[0.4] dark:opacity-[0.25]
+                     [background-image:radial-gradient(theme(colors.gray.300)_1px,transparent_1px)]
+                     dark:[background-image:radial-gradient(theme(colors.gray.700)_1px,transparent_1px)]
+                     [background-size:24px_24px]
+                     [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]"
+        />
 
-        <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight">
-          Apallon
-        </h1>
-        <p className="max-w-xl text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 leading-relaxed">
-          The Digital Diary of a Developer
-        </p>
+        <div className="max-w-6xl mx-auto px-4 w-full py-20">
+          <div className="grid items-center gap-12 md:grid-cols-2">
+            <div className="flex flex-col">              
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight">
+                Hi, I'm Farhad —{' '}
+                <span className="bg-gradient-to-r from-purple-600 to-fuchsia-500 bg-clip-text text-transparent">
+                  a developer
+                </span>{' '}
+                who writes.
+              </h1>
 
-        <div className="flex flex-wrap gap-4 justify-center">
-          <Link
-            to="/blog"
-            className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-lg transition shadow-lg shadow-purple-600/20"
-          >
-            Read the Blog
-          </Link>
-          <Link
-            to="/projects"
-            className="px-6 py-3 border border-purple-600 text-purple-600 dark:text-purple-400 dark:border-purple-400 hover:bg-purple-600/10 font-medium rounded-lg transition"
-          >
-            View Projects
-          </Link>
+              <p className="mt-5 max-w-md text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                I create, I learn, and I share. 
+                Welcome to my digital diary.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link
+                  to="/blog"
+                  className="px-5 py-2.5 rounded-full bg-purple-600 hover:bg-purple-700 text-white font-medium text-sm shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5"
+                >
+                  Read the Blog
+                </Link>
+                <Link
+                  to="/projects"
+                  className="px-5 py-2.5 rounded-full border border-purple-300 dark:border-purple-700 text-purple-700 dark:text-purple-300 font-medium text-sm hover:bg-purple-50 dark:hover:bg-purple-900/30 transition-all hover:-translate-y-0.5"
+                >
+                  View Projects
+                </Link>
+              </div>
+            </div>
+
+            <div className="flex justify-center md:justify-end">
+              <div className="group relative">
+                <div className="absolute -inset-3 rounded-3xl bg-gradient-to-tr from-purple-500/20 to-fuchsia-500/20 blur-2xl" />
+                <div className="relative w-60 h-60 sm:w-72 sm:h-72 rounded-3xl overflow-hidden ring-1 ring-gray-200 dark:ring-gray-800 shadow-xl">
+                  <img
+                    src="/farhad-abdi.jfif"
+                    alt="Farhad Abdi"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 w-full pb-12">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-            Latest from the Blog
-          </h2>
+      <div className="max-w-6xl mx-auto px-4 w-full pb-20">
+        <div className="flex items-end justify-between mb-8">
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+              Latest from the Blog
+            </h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+              Thoughts, tutorials, and notes from the field.
+            </p>
+          </div>
           <Link
             to="/blog"
-            className="text-purple-600 dark:text-purple-400 hover:underline font-medium"
+            className="group hidden sm:inline-flex items-center gap-1 text-purple-600 dark:text-purple-400 hover:underline font-medium whitespace-nowrap"
           >
-            View all posts →
+            View all posts
+            <span className="transition-transform group-hover:translate-x-1">→</span>
           </Link>
         </div>
 
@@ -94,29 +138,45 @@ const HomePage = () => {
             <Link
               key={post.slug}
               to={`/blog/${post.slug}`}
-              className="group block p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-black/60 backdrop-blur-sm hover:border-purple-600/50 dark:hover:border-purple-400/50 transition-all shadow-sm hover:shadow-md dark:hover:shadow-purple-500/10"
+              className="group relative flex flex-col p-6 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/60 backdrop-blur-sm hover:border-purple-500/60 dark:hover:border-purple-400/60 transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-1 dark:hover:shadow-purple-500/10"
             >
-              <div className="flex flex-wrap gap-2 mb-3">
+              <div className="flex flex-wrap gap-2 mb-4">
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-2 py-1 rounded-full bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300"
+                    className="text-xs font-medium px-2.5 py-1 rounded-full bg-purple-50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 ring-1 ring-inset ring-purple-200/60 dark:ring-purple-700/40"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
+
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition">
                 {post.title}
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow leading-relaxed">
                 {post.excerpt}
               </p>
-              <span className="text-xs text-gray-400 dark:text-gray-500">
-                {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-              </span>
+
+              <div className="mt-auto flex items-center justify-between pt-2 border-t border-gray-100 dark:border-gray-800">
+                <span className="text-xs text-gray-400 dark:text-gray-500">
+                  {formatDate(post.date)}
+                </span>
+                <span className="text-xs font-medium text-purple-600 dark:text-purple-400 opacity-0 -translate-x-1 transition-all group-hover:opacity-100 group-hover:translate-x-0">
+                  Read →
+                </span>
+              </div>
             </Link>
           ))}
+        </div>
+
+        <div className="mt-8 text-center sm:hidden">
+          <Link
+            to="/blog"
+            className="inline-flex items-center gap-1 text-purple-600 dark:text-purple-400 hover:underline font-medium"
+          >
+            View all posts →
+          </Link>
         </div>
       </div>
     </section>
