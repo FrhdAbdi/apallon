@@ -1,0 +1,76 @@
+# ====================================================================
+# Global / OS / IDEs
+# ====================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# JetBrains Rider / IntelliJ
+.idea/
+*.sln.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.patch
+
+# ====================================================================
+# .NET (apallon-backend)
+# ====================================================================
+# Build folders
+apallon-backend/**/bin/
+apallon-backend/**/obj/
+
+# Publish output
+apallon-backend/**/publish/
+
+# NuGet Packages
+**/packages/
+*.nupkg
+apallon-backend/**/project.lock.json
+
+# App settings (Ignore local & environment-specific, keep base & templates)
+apallon-backend/**/appsettings.Development.json
+apallon-backend/**/appsettings.*.json
+!apallon-backend/**/appsettings.json
+!apallon-backend/**/appsettings.Template.json
+!apallon-backend/**/appsettings.*.example.json
+
+# User Secrets
+apallon-backend/**/secrets.json
+
+# ====================================================================
+# Node / React / Vite (apallon-frontend)
+# ====================================================================
+apallon-frontend/node_modules/
+apallon-frontend/dist/
+apallon-frontend/dist-ssr/
+apallon-frontend/coverage/
+
+# Vite local logs / cache
+apallon-frontend/.vite/
+apallon-frontend/.eslintcache
+
+# Package manager lock files (Optional: keep if you want consistent installs)
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# pnpm-debug.log*
+
+# Environment variables (Crucial for security)
+apallon-frontend/.env
+apallon-frontend/.env.local
+apallon-frontend/.env.development.local
+apallon-frontend/.env.test.local
+apallon-frontend/.env.production.local
+apallon-frontend/.env.*.local
+!apallon-frontend/.env.example
