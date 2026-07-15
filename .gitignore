@@ -74,3 +74,5 @@ apallon-frontend/.env.test.local
 apallon-frontend/.env.production.local
 apallon-frontend/.env.*.local
 !apallon-frontend/.env.example
+# Visual Studio
+apallon-backend/.vs/

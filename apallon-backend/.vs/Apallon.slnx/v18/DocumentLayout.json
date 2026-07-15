@@ -3,7 +3,36 @@
   "WorkspaceRootPath": "F:\\Personal Projects\\apallon\\apallon-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Personal Projects\\apallon\\apallon-frontend\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|f:\\personal projects\\apallon\\apallon-backend\\apallon.application\\features\\blog\\queries\\getblogposts\\getblogpostshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|solutionrelative:apallon.application\\features\\blog\\queries\\getblogposts\\getblogpostshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|f:\\personal projects\\apallon\\apallon-backend\\apallon.application\\features\\blog\\queries\\getblogposts\\getblogpostsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|solutionrelative:apallon.application\\features\\blog\\queries\\getblogposts\\getblogpostsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|f:\\personal projects\\apallon\\apallon-backend\\apallon.application\\dtos\\siteprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|solutionrelative:apallon.application\\dtos\\siteprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|f:\\personal projects\\apallon\\apallon-backend\\apallon.application\\dtos\\githubrepodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|solutionrelative:apallon.application\\dtos\\githubrepodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|f:\\personal projects\\apallon\\apallon-backend\\apallon.application\\dtos\\contactmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|solutionrelative:apallon.application\\dtos\\contactmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|f:\\personal projects\\apallon\\apallon-backend\\apallon.application\\dtos\\blogpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|solutionrelative:apallon.application\\dtos\\blogpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|f:\\personal projects\\apallon\\apallon-backend\\apallon.application\\common\\interfaces\\igithubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|solutionrelative:apallon.application\\common\\interfaces\\igithubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|f:\\personal projects\\apallon\\apallon-backend\\apallon.application\\common\\interfaces\\iapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA5562C-23C1-BB29-FA47-B706783FE4DE}|Apallon.Application\\Apallon.Application.csproj|solutionrelative:apallon.application\\common\\interfaces\\iapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,14 +67,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "vite.config.js",
-              "DocumentMoniker": "F:\\Personal Projects\\apallon\\apallon-frontend\\vite.config.js",
-              "RelativeDocumentMoniker": "..\\apallon-frontend\\vite.config.js",
-              "ToolTip": "F:\\Personal Projects\\apallon\\apallon-frontend\\vite.config.js",
-              "RelativeToolTip": "..\\apallon-frontend\\vite.config.js",
+              "Title": "GetBlogPostsHandler.cs",
+              "DocumentMoniker": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\Features\\Blog\\Queries\\GetBlogPosts\\GetBlogPostsHandler.cs",
+              "RelativeDocumentMoniker": "Apallon.Application\\Features\\Blog\\Queries\\GetBlogPosts\\GetBlogPostsHandler.cs",
+              "ToolTip": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\Features\\Blog\\Queries\\GetBlogPosts\\GetBlogPostsHandler.cs",
+              "RelativeToolTip": "Apallon.Application\\Features\\Blog\\Queries\\GetBlogPosts\\GetBlogPostsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:52:52.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetBlogPostsQuery.cs",
+              "DocumentMoniker": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\Features\\Blog\\Queries\\GetBlogPosts\\GetBlogPostsQuery.cs",
+              "RelativeDocumentMoniker": "Apallon.Application\\Features\\Blog\\Queries\\GetBlogPosts\\GetBlogPostsQuery.cs",
+              "ToolTip": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\Features\\Blog\\Queries\\GetBlogPosts\\GetBlogPostsQuery.cs",
+              "RelativeToolTip": "Apallon.Application\\Features\\Blog\\Queries\\GetBlogPosts\\GetBlogPostsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:52:27.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SiteProfileDto.cs",
+              "DocumentMoniker": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\DTOs\\SiteProfileDto.cs",
+              "RelativeDocumentMoniker": "Apallon.Application\\DTOs\\SiteProfileDto.cs",
+              "ToolTip": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\DTOs\\SiteProfileDto.cs",
+              "RelativeToolTip": "Apallon.Application\\DTOs\\SiteProfileDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-08T07:36:41.619Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:50:59.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GitHubRepoDto.cs",
+              "DocumentMoniker": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\DTOs\\GitHubRepoDto.cs",
+              "RelativeDocumentMoniker": "Apallon.Application\\DTOs\\GitHubRepoDto.cs",
+              "ToolTip": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\DTOs\\GitHubRepoDto.cs",
+              "RelativeToolTip": "Apallon.Application\\DTOs\\GitHubRepoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:50:57.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactMessageDto.cs",
+              "DocumentMoniker": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\DTOs\\ContactMessageDto.cs",
+              "RelativeDocumentMoniker": "Apallon.Application\\DTOs\\ContactMessageDto.cs",
+              "ToolTip": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\DTOs\\ContactMessageDto.cs",
+              "RelativeToolTip": "Apallon.Application\\DTOs\\ContactMessageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:50:56.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlogPostDto.cs",
+              "DocumentMoniker": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\DTOs\\BlogPostDto.cs",
+              "RelativeDocumentMoniker": "Apallon.Application\\DTOs\\BlogPostDto.cs",
+              "ToolTip": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\DTOs\\BlogPostDto.cs",
+              "RelativeToolTip": "Apallon.Application\\DTOs\\BlogPostDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:50:54.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IGitHubService.cs",
+              "DocumentMoniker": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\Common\\Interfaces\\IGitHubService.cs",
+              "RelativeDocumentMoniker": "Apallon.Application\\Common\\Interfaces\\IGitHubService.cs",
+              "ToolTip": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\Common\\Interfaces\\IGitHubService.cs",
+              "RelativeToolTip": "Apallon.Application\\Common\\Interfaces\\IGitHubService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:50:52.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IApplicationDbContext.cs",
+              "DocumentMoniker": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Apallon.Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+              "ToolTip": "F:\\Personal Projects\\apallon\\apallon-backend\\Apallon.Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+              "RelativeToolTip": "Apallon.Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:50:49.549Z",
               "EditorCaption": ""
             }
           ]
