@@ -1,5 +1,6 @@
-using Apallon.Infrastructure;
 using Apallon.Application;
+using Apallon.Infrastructure;
+using Apallon.Infrastructure.Data;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +21,12 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    await DbSeeder.SeedAsync(db);
+}
 
 if (app.Environment.IsDevelopment())
 {
