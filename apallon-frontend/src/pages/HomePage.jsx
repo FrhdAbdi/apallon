@@ -1,58 +1,29 @@
-import { Link } from 'react-router-dom';
-
-const featuredPosts = [
-  {
-    title: "How I Structure .NET Minimal APIs",
-    excerpt: "A clean pattern for bootstrapping projects without getting lost in boilerplate.",
-    slug: "dotnet-minimal-apis",
-    date: "2026-05-20",
-    tags: [".NET", "Architecture"],
-  },
-  {
-    title: "Dark Mode with Tailwind & React",
-    excerpt: "Simple theme toggling that looks great and respects system preferences.",
-    slug: "dark-mode-tailwind-react",
-    date: "2026-04-10",
-    tags: ["React", "Tailwind"],
-  },
-  {
-    title: "Why I Chose SQLite for My Personal Site",
-    excerpt: "The surprising power of a single-file database for production workloads.",
-    slug: "sqlite-personal-site",
-    date: "2026-03-02",
-    tags: ["SQLite", "Backend"],
-  },
-  {
-    title: "Building a GitHub Projects Page with Octokit",
-    excerpt: "Automatically showcase your open-source repos with live data from the GitHub API.",
-    slug: "github-projects-octokit",
-    date: "2026-02-14",
-    tags: [".NET", "GitHub"],
-  },
-  {
-    title: "EF Core Migrations in a Team Environment",
-    excerpt: "How to avoid conflicts and keep your database schema in sync across branches.",
-    slug: "ef-core-migrations-team",
-    date: "2026-01-22",
-    tags: ["EF Core", "DevOps"],
-  },
-  {
-    title: "Markdown Rendering in React with Syntax Highlighting",
-    excerpt: "Turn plain text into rich, code-colored blog posts using react-markdown and Prism.",
-    slug: "markdown-react-highlighting",
-    date: "2025-12-05",
-    tags: ["React", "Markdown"],
-  },
-];
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { getBlogPosts } from "../api/blogService";
 
 const formatDate = (date) =>
-  new Date(date).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
+  new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
   });
 
 const HomePage = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const data = await getBlogPosts();
+        setPosts(data.slice(0, 6));
+      } catch (error) {
+        console.error("Failed to fetch posts:", error);
+      }
+    };
+    fetchPosts();
+  }, []);
+
   return (
     <section className="flex flex-col">
       <div className="relative overflow-hidden">
@@ -67,18 +38,17 @@ const HomePage = () => {
 
         <div className="max-w-6xl mx-auto px-4 w-full py-20">
           <div className="grid items-center gap-12 md:grid-cols-2">
-            <div className="flex flex-col">              
+            <div className="flex flex-col">
               <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight">
-                Hi, I'm Farhad —{' '}
+                Hi, I'm Farhad —{" "}
                 <span className="bg-gradient-to-r from-purple-600 to-fuchsia-500 bg-clip-text text-transparent">
                   a developer
-                </span>{' '}
+                </span>{" "}
                 who writes.
               </h1>
 
               <p className="mt-5 max-w-md text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                I create, I learn, and I share. 
-                Welcome to my digital diary.
+                I create, I learn, and I share. Welcome to my digital diary.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -109,12 +79,11 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 w-full pb-20">
+      <div className="max-w-6xl mx-auto px-4 w-full pb-12">
         <div className="flex items-end justify-between mb-8">
           <div>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -129,12 +98,14 @@ const HomePage = () => {
             className="group hidden sm:inline-flex items-center gap-1 text-purple-600 dark:text-purple-400 hover:underline font-medium whitespace-nowrap"
           >
             View all posts
-            <span className="transition-transform group-hover:translate-x-1">→</span>
+            <span className="transition-transform group-hover:translate-x-1">
+              →
+            </span>
           </Link>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {featuredPosts.map((post) => (
+          {posts.map((post) => (
             <Link
               key={post.slug}
               to={`/blog/${post.slug}`}
@@ -150,17 +121,15 @@ const HomePage = () => {
                   </span>
                 ))}
               </div>
-
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition">
                 {post.title}
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow leading-relaxed">
                 {post.excerpt}
               </p>
-
               <div className="mt-auto flex items-center justify-between pt-2 border-t border-gray-100 dark:border-gray-800">
                 <span className="text-xs text-gray-400 dark:text-gray-500">
-                  {formatDate(post.date)}
+                  {formatDate(post.publishedAt)}
                 </span>
                 <span className="text-xs font-medium text-purple-600 dark:text-purple-400 opacity-0 -translate-x-1 transition-all group-hover:opacity-100 group-hover:translate-x-0">
                   Read →
